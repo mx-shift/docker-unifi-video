@@ -4,7 +4,7 @@
 [hub]: https://hub.docker.com/r/kc8apf/unifi-video/
 
 # kc8apf/unifi-video
-[![](https://images.microbadger.com/badges/version/kc8apf/unifi-video.svg)](https://microbadger.com/images/kc8apf/unifi-video "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/kc8apf/unifi-video.svg)](https://microbadger.com/images/kc8apf/unifi-video "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/kc8apf/unifi-video.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/kc8apf/unifi-video.svg)][hub]
+[![](https://images.microbadger.com/badges/version/kc8apf/unifi-video.svg)](https://microbadger.com/images/kc8apf/unifi-video "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/kc8apf/unifi-video.svg)](https://microbadger.com/images/kc8apf/unifi-video "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/kc8apf/unifi-video.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/kc8apf/unifi-video.svg)][hub][![Build Status](https://travis-ci.org/kc8apf/docker-unifi-video.svg?branch=master)](https://travis-ci.org/kc8apf/docker-unifi-video)
 
 [UniFi® Video][appurl] is a powerful and flexible, integrated IP video management surveillance system designed to work with UniFi® Video Cameras.
 
