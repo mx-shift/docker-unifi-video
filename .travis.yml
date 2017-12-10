@@ -1,0 +1,18 @@
+language: generic
+sudo: required
+
+services:
+  - docker
+
+env:
+  global:
+    - REPO=kc8apf/unifi-video
+
+script:
+  - docker build -t this-build .
+
+after_success:
+  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
+  - export TAG=`if [[ $TRAVIS_PULL_REQUEST == "false" ]]; then echo $TRAVIS_BRANCH; else echo pull-$TRAVIS_PULL_REQUEST_BRANCH; fi`
+  - docker tag this-build $REPO:$TAG
+  - docker push $REPO:$TAG
