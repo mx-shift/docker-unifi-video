@@ -1,7 +1,7 @@
 FROM lsiobase/xenial
 
 # package versions
-ARG UNIFI_VIDEO_VER="3.8.5"
+ARG UNIFI_VIDEO_VER="3.9.0"
 
 # environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
