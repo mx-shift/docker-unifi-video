@@ -1,10 +1,19 @@
 FROM lsiobase/xenial
 
+ARG BUILD_DATE
+ARG VCS_REF
+
 # package versions
 ARG UNIFI_VIDEO_VER="3.9.0"
 
 # environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
+
+LABEL org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.vcs-url="https://github.com/kc8apf/docker-unifi-video" \
+      org.label-schema.version=$UNIFI_VIDEO_VER \
+      org.label-schema.schema-version="1.0"
 
 # add mongo unifi-video repos
 RUN \
