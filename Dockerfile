@@ -4,7 +4,7 @@ ARG BUILD_DATE
 ARG VCS_REF
 
 # package versions
-ARG UNIFI_VIDEO_VER="3.9.2"
+ARG UNIFI_VIDEO_VER="3.9.3"
 
 # environment settings
 ARG DEBIAN_FRONTEND="noninteractive"
