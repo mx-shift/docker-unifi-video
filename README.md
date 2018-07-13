@@ -74,6 +74,7 @@ Thanks to [linuxserver.io][linuxserverurl] who provided much inspiration with [l
 
 ## Versions
 
++ **2018-07-13:** Update UniFi video to 3.9.7.
 + **2018-03-12:** Update UniFi video to 3.9.4.
 + **2018-03-08:** Update UniFi video to 3.9.3.
 + **2018-02-22:** Update UniFi video to 3.9.2.
