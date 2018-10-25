@@ -24,6 +24,18 @@ docker create \
   kc8apf/unifi-video
 ```
 
+When started with a blank volume mounted at /config, UniFi Video will typically generate a few errors similar to the following:
+```
+2018-03-15 20:33:28,583 ERROR Unable to locate appender ConsoleErrorAppender for logger uv.stream
+2018-03-15 20:33:28,584 ERROR Unable to locate appender ConsoleErrorAppender for logger uv.login
+Exception in thread "EmsInitTask" java.lang.NullPointerException
+	at com.ubnt.airvision.service.ems.C.do.super(Unknown Source)
+	at com.ubnt.airvision.service.ems.C$1.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:748)
+```
+
+These occur on a new install even when UniFi Video is installed directly on an Ubuntu 16.04 install.  Despite these errors, the application does start and works correctly.
+
 ## Parameters
 
 `The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side. 
