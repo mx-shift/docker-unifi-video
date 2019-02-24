@@ -20,4 +20,4 @@ mkdir -p \
 [[ ! -f /config/data/ufv-truststore ]] && cp -f ${BASEDIR}/etc/ufv-truststore /config/data/
 
 # permissions
-chown -R unifi-video:unifi-video /config
+find /config ! -user unifi-video ! -group unifi-video -exec chown -R unifi-video:unifi-video {} \;
